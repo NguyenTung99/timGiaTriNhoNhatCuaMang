@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm giá trị nhỏ nhất trong mảng</title>
+</head>
+<body onload="giaTriNhoNhat(mang1); giaTriNhoNhat(mang2);
+giaTriNhoNhat(mang3); giaTriNhoNhat(mang4)">
+<script>
+
+    let mang1 = [3, 5, 1, 8, -3, 7, 8];
+    let mang2 = [7, 12, 6, 9, 20, 56, 89];
+    let mang3 = [];
+    let mang4 = [0, 0, 0, 0, 0, 0];
+
+    function giaTriNhoNhat(mang_can_tim_min) {
+        let mangMin = mang_can_tim_min[0];
+        for (let i = 0; i < mang_can_tim_min.length; i++) {
+            if (mang_can_tim_min[i] < mangMin) {
+                mangMin = mang_can_tim_min[i];
+            }
+        }
+        alert(mangMin);
+    }
+</script>
+</body>
+</html>
